@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:8001/docs)",
+      "Bash(curl -s http://localhost:8001/api/v1/llm)",
+      "Bash(h:/Agent/Project/DataClaw/.venv/Scripts/python.exe -c \"import json; f=open\\('h:/Agent/Project/DataClaw/data/llm_config.json','r',encoding='utf-8'\\); print\\(json.load\\(f\\)\\); f.close\\(\\)\")",
+      "Bash(curl -s -X POST http://localhost:8001/api/v1/llm/test -H \"Content-Type: application/json\" -H \"Authorization: Bearer test\" -d '{\"provider\":\"openai\",\"model\":\"test\",\"api_key\":\"test\",\"api_base\":\"http://localhost:9999\"}')",
+      "Bash(cat ~/.nanobot/config.json 2>&1 | head -30)",
+      "Read(//c/Users/changqing/.nanobot/**)",
+      "Bash(h:/Agent/Project/DataClaw/.venv/Scripts/python.exe -c ' *)",
+      "Bash(curl -s -X POST http://localhost:8001/api/v1/llm/test -H \"Content-Type: application/json\" -d '{\"provider\":\"openai\",\"model\":\"test\",\"api_key\":\"test\",\"api_base\":\"http://localhost:9999\"}')",
+      "Bash(powershell -Command \"Stop-Process -Id 86324 -Force\")",
+      "Bash(powershell -Command \"Get-Process -Id 86324 | Select-Object Id,ProcessName,Path\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8000 | Format-List\")",
+      "Bash(powershell -Command 'Get-Process | Where-Object { $_.Name -like '\\\\''*python*'\\\\'' -or $_.Name -like '\\\\''*uvicorn*'\\\\'' } | Format-Table Id,Name,Path -AutoSize')",
+      "Bash(taskkill //F //PID 78916)"
+    ]
+  }
+}

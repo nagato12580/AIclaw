@@ -1,0 +1,16 @@
+.env
+.env*
+**/.env
+**/.env*
+.vscode
+nanobot-0.1.4.post4
+data
+_research
+.trae
+.DS_Store
+README*
+readme*
+**/README*
+**/readme*
+*.md
+**/*.md
